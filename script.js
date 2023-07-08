@@ -16,7 +16,7 @@ $(document).ready(function () {
   
   $('.saveBtn').on('click', function(){
     //get neighbor values
-    var text = $(this).sibling('.description').val();
+    var text = $(this).siblings('.description').val();
     var time = $(this).parent().attr('id')
 
     // store to localstorage
@@ -27,8 +27,8 @@ $(document).ready(function () {
 
   function hourTracker(){
 
-  var currentTime = dayjs().format('h');
-  console.log(currentTime);
+  var currentTime = dayjs().format('hour');
+  
  //How can DOM traversal be used to get the "hour-x" id of the
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
@@ -68,17 +68,17 @@ $(document).ready(function () {
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
 
-  //get all hourse from local storage
+  //get all hours from local storage
 
-$('#hour9 .description').val(localStorage.getItem('hour9'));
-$('#hour10 .description').val(localStorage.getItem('hour10'));
-$('#hour11 .description').val(localStorage.getItem('hour11'));
-$('#hour12 .description').val(localStorage.getItem('hour12'));
-$('#hour13 .description').val(localStorage.getItem('hour13'));
-$('#hour14 .description').val(localStorage.getItem('hour14'));
-$('#hour15 .description').val(localStorage.getItem('hour15'));
-$('#hour16 .description').val(localStorage.getItem('hour16'));
-$('#hour17 .description').val(localStorage.getItem('hour17'));
+$('#hour-9 .description').val(localStorage.getItem('hour-9'));
+$('#hour-10 .description').val(localStorage.getItem('hour-10'));
+$('#hour-11 .description').val(localStorage.getItem('hour-11'));
+$('#hour-12 .description').val(localStorage.getItem('hour-12'));
+$('#hour-13 .description').val(localStorage.getItem('hour-13'));
+$('#hour-14 .description').val(localStorage.getItem('hour-14'));
+$('#hour-15 .description').val(localStorage.getItem('hour-15'));
+$('#hour-16 .description').val(localStorage.getItem('hour-16'));
+$('#hour-17 .description').val(localStorage.getItem('hour-17'));
 
 
 
