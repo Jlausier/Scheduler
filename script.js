@@ -3,7 +3,7 @@
 // in the html.
 
  // TODO: Add code to display the current date in the header of the pag
-var todaysDate = dayjs().format('dddd, MMMM D YYYY');
+var todaysDate = dayjs().format('dddd, MMMM Do YYYY');
 $("#currentDay").html(todaysDate)
 
 
